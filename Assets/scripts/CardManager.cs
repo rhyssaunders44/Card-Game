@@ -16,7 +16,7 @@ public class CardManager : MonoBehaviour
 
     public enum Faction
     {
-        bingus, aboba
+        any, bingus, aboba
     }
 
     public List<DeckSO> decks;
