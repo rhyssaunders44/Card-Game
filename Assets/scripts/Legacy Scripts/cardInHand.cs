@@ -14,7 +14,7 @@ public class cardInHand : MonoBehaviour
     void OnEnable()
     {
         cardSpriteRenderer = transform.Find("image").GetComponent<SpriteRenderer>();
-        Debug.Log("check");
+        Debug.Log($"Sprite renderer found!: {cardSpriteRenderer.gameObject.name}");
     }
     
     private Vector3 GetMousePos()
@@ -27,13 +27,13 @@ public class cardInHand : MonoBehaviour
         if (!cardBeingDragged)
         {
             cardBeingDragged = true;
-            mousePosition = Input.mousePosition - GetMousePos();
+            //mousePosition = Input.mousePosition - GetMousePos();
         }
     }
 
     private void OnMouseDrag()
     {
-        transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition-mousePosition);
+        //transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition-mousePosition);
         transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
