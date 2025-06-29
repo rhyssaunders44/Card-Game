@@ -1,16 +1,20 @@
+
+using System.Collections;
 using UnityEngine;
 
 public class Abilities : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+
+    public IEnumerator abilityFunction(Coroutine[] abilitySubroutines)
     {
-        
+        for (int i = 0; i < abilitySubroutines.Length; i++)
+        {
+
+        }
+        yield break;
     }
+    //assist (target)
+
+    
 }
