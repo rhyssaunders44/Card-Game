@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public enum Phases
     {
-        
+        prep, whatever, res
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    public Player[] players;
+
+    public GameObject[][] playerField;
+    public GameObject[] column;
+
+    void Awake(){
+    
         
     }
 }

@@ -1,20 +1,12 @@
-
-using System.Collections;
+using System.Collections.Generic;
+using NUnit.Framework.Internal;
 using UnityEngine;
 
 public class Abilities : MonoBehaviour
 {
 
-
-    public IEnumerator abilityFunction(Coroutine[] abilitySubroutines)
+    public void Assist(int cell)
     {
-        for (int i = 0; i < abilitySubroutines.Length; i++)
-        {
-
-        }
-        yield break;
+        //
     }
-    //assist (target)
-
-    
 }
